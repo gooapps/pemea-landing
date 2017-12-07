@@ -66,7 +66,7 @@
                     <!-- logo -->
                     <h1 class="navbar-brand">
                         <a href="#body">
-                            <img src="img/logo.png" alt="Kasper Logo">
+                            <img src="img/Pemea-postivo.png" alt="Pemea Logo">
                         </a>
                     </h1>
                     <!-- /logo -->
@@ -96,6 +96,7 @@
                         <li><a href="#Service">Service</a></li>
                         <li><a href="#OurPartner">Our Partner</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li><a href="https://www.linkedin.com/company/10607481/" target="_blank"><i style="font-size: 20px;" class="fa fa-linkedin-square"></i></a></li>
                     </ul>
                 </nav>
                 <!-- /main nav -->
@@ -115,9 +116,9 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <video autoplay loop muted poster="background-vid.png" id="background-vid">
-                        <source src="intro.mp4" type="video/mp4">
-                    </video>
+                    <!--                    <video autoplay loop muted poster="background-vid.png" id="background-vid">
+                                            <source src="intro.mp4" type="video/mp4">
+                                        </video>-->
                     <div id="home-carousel" class="carousel slide" data-interval="false">
                         <ol class="carousel-indicators">
                             <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
@@ -127,21 +128,32 @@
                         <!--/.carousel-indicators-->
 
                         <div class="carousel-inner">
-                            <div class="item active">
+                            <div class="item active" style="background-image: url('img/slider/business.jpg')">
                                 <div class="carousel-caption">
                                     <div class="animated bounceInRight">
-                                        <h2>WHO WE HELP</h2>
-                                        <p>We help Medical Companies to successfully develop new markets in the Middle East & Latin America.</p>
-                                        <h2>Shall we talk?</h2>
+                                        <div class="blur"></div>
+                                        <div class="content">
+                                            <h2>We develop Middle East & Latin America markets for Innovative Medical Companies.</h2>
+                                            <p>Our experience in the market and a reliable distribution network guarantees an efficient solution to quickly increase income and growth for our partners.</p>
+                                            <ul>
+                                                <li>We work as an outsourced Area Manager:</li>
+                                                <li>Finding the right distributor partner in each country to suit your needs.</li>
+                                                <li>Facilitating all local regulatory approvals.</li>
+                                                <li>Executing your marketing plan together with local partners.</li>
+                                                <li>Managing the sales process within the area</li>
+                                            </ul>
+                                            <p>We work based on success fee, thus avoiding fixed costs and limiting risks for you.</p>
+                                            <h2>Stay focused on your core markets and leave the rest to us!</h2>
+                                        </div>
                                     </div>
                                 </div>
                             </div>              
 
-                            <div class="item">                
+                            <!--<div class="item">                
                                 <div class="carousel-caption">
                                     <div class="animated bounceInDown">
                                         <h2>SERVICES</h2>
-                                        <!--<p>Outsource an Area Manager and stay focus on your core business! <br/>-->
+                                        <p>Outsource an Area Manager and stay focus on your core business! <br/>
                                         In PEMEA Consulting  we work as an outsourced Area Manager, only based on success and avoiding any costs for the principals. Through our reliable distribution network we guarantee an efficient solution to quickly increase revenue, income and growth for our partners.</p>
                                         <h2>Would you like to know more about our services?</h2>
                                     </div>
@@ -156,17 +168,17 @@
                                         <h2>Check out our Values</h2>
                                     </div>
                                 </div>
-                            </div>
+                            </div>-->
                         </div>
                         <!--/.carousel-inner-->
-                        <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+                        <!--<nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
                             <a class="sl-prev hidden-xs" href="#home-carousel" data-slide="prev">
                                 <i class="fa fa-angle-left fa-3x"></i>
                             </a>
                             <a class="sl-next" href="#home-carousel" data-slide="next">
                                 <i class="fa fa-angle-right fa-3x"></i>
                             </a>
-                        </nav>
+                        </nav>-->
                     </div>
                 </div>
             </div>
@@ -202,15 +214,24 @@
             </div> <!-- end .row -->
             <div class="row">
                 <div class=" col-sm-4 wow fadeInLeft text-center" data-wow-delay="0.2s">
-                    <img src="img/profile/Imagen1.png" class="img-responsive profile"/>
+                    <a class="overlayImg" href="http://www.linkedin.com/in/hugo-dominguez-b7782ba" target="_blank">
+                        <span class="roll" ></span>
+                        <img src="img/profile/Imagen1.png" class="img-responsive profile"/>
+                    </a>
                     <p><br/>Hugo Dominguez<br/>CEO & Area Director Middle East</p>
                 </div>
                 <div class=" col-sm-4 wow fadeInUp text-center" data-wow-delay="0.3s">
-                    <img src="img/profile/Imagen2.png" class="img-responsive profile"/>
+                    <a class="overlayImg" href="http://www.linkedin.com/in/lisbeth-hallas-borum-8469866" target="_blank">
+                        <span class="roll" ></span>
+                        <img src="img/profile/Imagen2.png" class="img-responsive profile"/>
+                    </a>
                     <p><br/>Lisbeth Hallas-Borum<br/>Regulatory & Logistic Manager</p>
                 </div>
                 <div class=" col-sm-4 wow fadeInRight text-center" data-wow-delay="0.4s">
-                    <img src="img/profile/Imagen3.png" class="img-responsive profile"/>
+                    <a class="overlayImg" href="http://www.linkedin.com/in/borja-nespral" target="_blank">
+                        <span class="roll" ></span>
+                        <img src="img/profile/Imagen3.png" class="img-responsive profile"/>
+                    </a>
                     <p><br/>Borja Nespral<br/>Area Director Latin America</p>
                 </div>
             </div> <!-- end .row -->
@@ -338,7 +359,7 @@
                         <ul class="withCheck">
                             <li>Wound Care</li>
                             <li>Neuro Surgery </li>
-                            <li>Cardio Torathic</li>
+                            <li>Cardiothoracic</li>
                             <li>General Surgery </li>
                         </ul>
                         <ul class="withCheck">
@@ -404,10 +425,10 @@
                 </div>
             </div>
             <div class="row">
-                <div class=" col-sm-6 wow fadeInLeft text-center" data-wow-delay="0.1s">
+                <div class=" col-sm-7 wow fadeInLeft text-center" data-wow-delay="0.1s">
                     <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
                 </div>
-                <div class=" col-sm-6 wow fadeInRight" data-wow-delay="0.2s">
+                <div class=" col-sm-5 wow fadeInRight" data-wow-delay="0.2s">
                     <ul>
                         <li>Big markets with a population of over 1.000 million people. </li>
                         <li>Emerging economies and excellent demographic conditions. </li>
@@ -440,19 +461,19 @@
                 <div class="column col-sm-4 wow fadeInLeft text-center" data-wow-delay="0.1s">
                     <div class="subtitle text-center">
                         <h3>Language and business culture barriers</h3>
-                        <p>Navigating cross-cultural communication, etiquettes and hierarchy can be a big challenge when sitting on the other side of the globe. The most effective distribution partners for your business might lack in English or general knowledge of your business culture. Therefor the selection of a potential distributor should be done by someone on the ground who can actually evaluate the full range of a possible partner, analyzing how they operate, their sales and marketing capabilities, financial stability, knowledge of your market, customer relationships and more. </p>
+                        <p>Navigating cross-cultural communication, etiquettes and hierarchy can be a big challenge when sitting on the other side of the globe. The most effective distribution partners for your business might lack in English or general knowledge of your business culture. <b>In PEMEA Consulting we are experienced selecting the potential distributor, evaluating a full range of possible partners, knowing or sharing their culture, analyzing how they operate, sales and marketing capabilities, financial stability, knowledge of the market, customer relationships and more.</b> </p>
                     </div>
                 </div>
                 <div class="column col-sm-4 wow fadeInDown" data-wow-delay="0.2s">
                     <div class="subtitle text-center">
                         <h3>Complexity of distribution</h3>
-                        <p>In the Middle East most medical products are being sold through big tenders requiring an immense promotional work beforehand. In South America medical product distribution is still evolving and many distributors do not offer effective reach throughout the whole country. Understanding the strengths and weaknesses of each potential partner and how they fit into the distribution system are critical considerations in making the best long-term partner choices. </p>
+                        <p>In the Middle East most medical products are being sold through big tenders requiring an immense promotional work beforehand. In South America medical product distribution is still evolving and many distributors do not offer effective reach throughout the whole country. <b>In PEMEA Consulting we understand the strengths and weaknesses of each potential partner and how they fit into the distribution system are critical considerations in making the best long-term partner choices.</b></p>
                     </div>
                 </div>
                 <div class="column col-sm-4 wow fadeInRight" data-wow-delay="0.3s">
                     <div class="subtitle text-center">
                         <h3>Regulation & reimbursement challenges</h3>
-                        <p>The regulatory structure in the Middle East & Latin American countries is neither uniform nor consistent and gaining success in new markets can be tough if your products are late to market or come without appropriate reimbursement. In PEMEA Consulting we have the experience to qualify potential partners and make sure your products find the fastest way to market and profitability.</p>
+                        <p>The regulatory structure in the Middle East & Latin American countries is neither uniform nor consistent and gaining success in new markets can be tough if your products are late to market or come without appropriate reimbursement. <b>In PEMEA Consulting we have the experience to qualify potential partners and make sure your products find the fastest way to market and profitability.</b></p>
                     </div>
                 </div>
             </div>
@@ -523,6 +544,15 @@ End #Service
 <section id="OurPartner">
     <div class="container">
         <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center wow fadeInUp">
+                    <h2>OUR PARTNERS</h2>
+                    <p style="color: #1f2021;">Starting from scratch in 2016, we are present in more than 20 countries and have faced regulatory processes in every continent of the world. We are forecasting sales to our current customers for XXX Million USD in 2018.</p>
+                    <br/><br/>
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-4 wow fadeInLeft"><img class="img-responsive" src="img/partners/Imagen6.png"/></div>
             <div class="col-md-4 wow fadeInDown" data-wow-delay="0.1s"><img class="img-responsive" src="img/partners/Imagen7.png"/></div>
             <div class="col-md-4 wow fadeInRight" data-wow-delay="0.2s"><img class="img-responsive" src="img/partners/Imagen8.png"/></div>
@@ -557,9 +587,9 @@ End #OurPartner
 
             <div class="col-md-12 col-sm-12 wow fadeInLeft text-center">
                 <hr/>
-                <p>Phone: <a href="tel:+34930000000">930 000 000</a></p><hr/>
-                <p>Contact email: <a href="mailto:info@pinnacle-emea.com">info@pinnacle-emea.com</a></p><hr/>
-                <p>Address: C/Sol 1r 2a, 08682 Barcelona (Barcelona), Spain</p><hr/>
+                <p>Phone: <a href="tel:+971551672628">+971 551 672 628</a></p><hr/>
+                <p>Contact email: <a href="mailto:info@pinnacle-emea.com">borja@pemeaconsulting.com</a></p><hr/>
+                <!--<p>Address: C/Sol 1r 2a, 08682 Barcelona (Barcelona), Spain</p><hr/>-->
                 <!--                <div class="contact-form row">
                                     <form action="index.html" method="post">
                                         <div class="col-sm-4 input-field">
@@ -595,18 +625,18 @@ End #contact
         <div class="row">
             <div class="col-lg-12">
                 <div class="footer-logo wow fadeInDown">
-                    <img src="img/logo.png" alt="logo">
+                    <img height="70px" src="img/Pemea-negativo.png" alt="logo">
                 </div>
 
-                <div class="footer-social wow fadeInUp">
-                    <h3>We are social</h3>
-                    <ul class="text-center list-inline">
-                        <li><a href="#"><i class="fa fa-facebook fa-custom-size"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter fa-custom-size"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus fa-custom-size"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble fa-custom-size"></i></a></li>
-                    </ul>
-                </div>
+                <!--                <div class="footer-social wow fadeInUp">
+                                    <h3>We are social</h3>
+                                    <ul class="text-center list-inline">
+                                        <li><a href="#"><i class="fa fa-facebook fa-custom-size"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter fa-custom-size"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-google-plus fa-custom-size"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-dribbble fa-custom-size"></i></a></li>
+                                    </ul>
+                                </div>-->
 
                 <div class="copyright">
                     <p>Developed by <a target="_blank" href="http://www.gooapps.net">GooApps.net</a></p>
@@ -649,11 +679,32 @@ JavaScripts
 <script src="js/main.js"></script>
 
 <script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
 <script src="https://code.highcharts.com/modules/data.js"></script>
 <script>
+
+    $('ul.nav li.dropdown').hover(function () {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);
+    }, function () {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(300);
+    });
+
+    Highcharts.setOptions({
+        chart: {
+            style: {
+                fontFamily: 'Open Sans'
+            }
+        }
+    });
     Highcharts.chart('container', {
         chart: {
-            type: 'column'
+            type: 'column',
+            options3d: {
+                enabled: true,
+                alpha: 10,
+                beta: 25,
+                depth: 70
+            }
         },
         credits: {
             enabled: false
@@ -664,7 +715,10 @@ JavaScripts
         xAxis: {
             type: 'category',
             labels: {
-                rotation: -45
+                skew3d: true,
+                style: {
+                    fontSize: '16px'
+                }
             }
         },
         yAxis: {
@@ -707,6 +761,29 @@ JavaScripts
                         drilldown: 'Europe'
                     }]
             }]
+    });
+
+
+    $(function () {
+// OPACITY OF BUTTON SET TO 0%
+        $(".roll").css("opacity", "0");
+
+// ON MOUSE OVER
+        $(".roll").hover(function () {
+
+// SET OPACITY TO 70%
+            $(this).stop().animate({
+                opacity: .7
+            }, "fast");
+        },
+// ON MOUSE OUT
+                function () {
+
+// SET OPACITY BACK TO 50%
+                    $(this).stop().animate({
+                        opacity: 0
+                    }, "slow");
+                });
     });
 </script>
 </body>

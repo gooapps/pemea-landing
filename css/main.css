@@ -15,8 +15,8 @@ body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
     line-height: 1;
-    font-size: 16px;
-    color: #a8a8a8;
+    font-size: 17px;
+    color: #696969;
 }
 
 ol, ul {
@@ -116,7 +116,7 @@ body > section {
 .section-title p {
     line-height: 25px;
     font-weight: 300;
-    font-size: 13px;
+    font-size: 18px;
 }
 
 .btn {
@@ -131,7 +131,7 @@ body > section {
 .btn-blue {
     background-color: #00c7fc;
     color: #fff;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
     padding: 10px 35px;
 }
@@ -174,7 +174,7 @@ body > section {
 
 .navbar-brand {
     height: inherit;
-    padding: 21px 0;
+    padding: 10px 0;
 }
 
 .navbar-brand a {
@@ -182,13 +182,22 @@ body > section {
 }
 
 .navbar-brand a img{
+    height: 75px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.animated-nav .navbar-brand a img{
     height: 55px;
 }
 
 .dropdown-menu>li>a,
 .navigation .navbar-nav > li > a {
     color: #1f2021;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -270,7 +279,7 @@ body > section {
 }
 
 .carousel-caption > div {
-    background-color: rgba(15,116,143,0.7);
+    background-color: rgba(15,116,143,0.85);
     padding: 60px 60px 80px 60px;
     position: absolute;
     text-align: center;
@@ -290,7 +299,14 @@ body > section {
 #home-carousel .carousel-inner p {
     color: #FFFFFF;
     line-height: 28px;
-    font-size: 13px;
+    margin-top: 0;
+    text-shadow:none;
+}
+
+#home-carousel .carousel-inner ul {
+    color: #FFFFFF;
+    line-height: 18px;
+    font-size: 18px;
     margin-top: 0;
     text-shadow:none;
 }
@@ -351,8 +367,7 @@ body > section {
 }
 
 #service .media .media-body p{
-    color: #A8A8A8;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 24px;
 }
 
@@ -435,7 +450,7 @@ body > section {
 
 .service-features ul li {
     background: url("../img/icons/list-bg.png") no-repeat scroll 0 13px transparent;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 36px;
     padding-left: 50px;
 }
@@ -755,7 +770,7 @@ figcaption.mask span {
 
 .pricing-table {
     color: #1f2021;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 24px;
 }
 
@@ -770,7 +785,7 @@ figcaption.mask span {
 }
 
 .pricing-table .value {
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -901,7 +916,7 @@ figcaption.mask span {
 }
 
 .contact-form #msg-submit {
-    font-size: 13px;
+    font-size: 18px;
     padding: 17px 50px;
 }
 
@@ -1006,7 +1021,7 @@ ul.withCheck {
 
 .withCheck li { 
     margin-bottom:10px; 
-    font-size: 16px;
+    font-size: 17px;
     color: #1f2021;
 }
 
@@ -1042,8 +1057,7 @@ ul.withCheck {
 ============================================================*/
 
 #WhoWeAre p{
-    color: #A8A8A8;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 26px;
     margin-bottom: 15px;
 }
@@ -1055,7 +1069,36 @@ ul.withCheck {
 #WhoWeAre .img-container{
     position: relative;
 }
+#WhoWeAre .overlayImg{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #3B1431;
+    text-decoration: none;
+}
+#WhoWeAre span.roll {
+    background:center center no-repeat #fff;
+    height: 75%;
+    position: absolute;
+    text-align: center;
+    line-height: 153px;
+    width: 100%;
+    z-index: 10;	
+}
 
+#WhoWeAre .roll:before {
+    content: "\f08c"; 
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    /*--adjust as necessary--*/
+    color: #00c7fc;
+    font-size: 40px;
+    padding-right: 0.5em;
+    position: absolute;
+    top: calc(40% - 40px);
+    left: calc(50% - 40px);
+}
 /*============================================================
     VALUES
 ============================================================*/
@@ -1118,7 +1161,7 @@ ul.withCheck {
 }
 
 #Challenges .column p{
-    font-size: 16px;
+    font-size: 17px;
 }
 
 /*============================================================
