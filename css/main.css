@@ -16,7 +16,9 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1;
     font-size: 17px;
-    color: #696969;
+}
+.thumbnail{
+    height: 200px;
 }
 
 ol, ul {
@@ -78,7 +80,6 @@ body > section {
 
 .section-title {
     margin: 0 auto 50px;
-    width: 520px;
 }
 
 .section-title h2 {
@@ -115,7 +116,6 @@ body > section {
 
 .section-title p {
     line-height: 25px;
-    font-weight: 300;
     font-size: 18px;
 }
 
@@ -277,10 +277,13 @@ body > section {
     z-index: 11;
     text-align: left;
 }
+#home-carousel {
+    height: 850px;
+}
 
 .carousel-caption > div {
     background-color: rgba(15,116,143,0.85);
-    padding: 60px 60px 80px 60px;
+    padding: 30px 60px 80px 60px;
     position: absolute;
     text-align: left;
     top: 25%;
@@ -290,7 +293,7 @@ body > section {
 #home-carousel .carousel-inner h2 {
     color: #ffffff;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 38px;
     margin-bottom: 20px;
     text-shadow: none;
     text-transform: uppercase;
@@ -298,14 +301,14 @@ body > section {
 
 #home-carousel .carousel-inner p {
     color: #FFFFFF;
-    line-height: 28px;
+    line-height: 38px;
     margin-top: 0;
     text-shadow:none;
 }
 
 #home-carousel .carousel-inner ul {
     color: #FFFFFF;
-    line-height: 18px;
+    line-height: 28px;
     font-size: 18px;
     margin-top: 0;
     padding-left: 30px;
@@ -621,7 +624,6 @@ figcaption.mask span {
 }
 
 .fact-item p {
-    font-weight: 300;
 }
 
 
@@ -1146,8 +1148,6 @@ ul.withCheck {
 
 #Opportunities li { 
     margin-bottom:15px; 
-    font-size: 20px;
-    color: #1f2021;
 }
 
 /*============================================================

@@ -142,8 +142,10 @@ px      68    160    252    */
 
 .carousel-caption > div{
   width: 100%;
-  text-align: center;
+  text-align: left;
   padding: 20px 0;
+   height: 100%;
+   padding-left: 15px;
 }
 
 #home-carousel .carousel-inner h2{
@@ -153,6 +155,10 @@ px      68    160    252    */
 
 .carousel-caption{
   right: 0;
+  width: 100%;
+      position: initial;
+      text-align: left !important;
+     
 }
 
 .section-title{
