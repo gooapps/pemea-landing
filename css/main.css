@@ -282,15 +282,15 @@ body > section {
     background-color: rgba(15,116,143,0.85);
     padding: 60px 60px 80px 60px;
     position: absolute;
-    text-align: center;
+    text-align: left;
     top: 25%;
     width: 100%;
 }
 
 #home-carousel .carousel-inner h2 {
     color: #ffffff;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 24px;
+    line-height: 28px;
     margin-bottom: 20px;
     text-shadow: none;
     text-transform: uppercase;
@@ -308,6 +308,8 @@ body > section {
     line-height: 18px;
     font-size: 18px;
     margin-top: 0;
+    padding-left: 30px;
+    list-style-type: circle;
     text-shadow:none;
 }
 
