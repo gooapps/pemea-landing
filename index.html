@@ -116,15 +116,15 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <!--                    <video autoplay loop muted poster="background-vid.png" id="background-vid">
-                                            <source src="intro.mp4" type="video/mp4">
-                                        </video>-->
+                    <!--<video autoplay loop muted poster="background-vid.png" id="background-vid">
+                        <source src="intro.mp4" type="video/mp4">
+                    </video>-->
                     <div id="home-carousel" class="carousel slide" data-interval="false">
-                        <ol class="carousel-indicators">
+                        <!--<ol class="carousel-indicators">
                             <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
                             <li data-target="#home-carousel" data-slide-to="1"></li>
                             <li data-target="#home-carousel" data-slide-to="2"></li>
-                        </ol>
+                        </ol>-->
                         <!--/.carousel-indicators-->
 
                         <div class="carousel-inner">
@@ -135,14 +135,16 @@
                                         <div class="content">
                                             <h2>We develop Middle East & Latin America markets for Innovative Medical Companies.</h2>
                                             <p>Our experience in the market and a reliable distribution network guarantees an efficient solution to quickly increase income and growth for our partners.</p>
+                                            <div style="padding:20px;">
+                                            <p>We work as an outsourced Area Manager:</p>
                                             <ul>
-                                                <li>We work as an outsourced Area Manager:</li>
                                                 <li>Finding the right distributor partner in each country to suit your needs.</li>
                                                 <li>Facilitating all local regulatory approvals.</li>
                                                 <li>Executing your marketing plan together with local partners.</li>
                                                 <li>Managing the sales process within the area</li>
                                             </ul>
-                                            <p>We work based on success fee, thus avoiding fixed costs and limiting risks for you.</p>
+                                            </div>
+                                            <p>We work based on success fee, thus avoiding fixed costs and limiting risks for you.</p><br/>
                                             <h2>Stay focused on your core markets and leave the rest to us!</h2>
                                         </div>
                                     </div>
@@ -218,21 +220,21 @@
                         <span class="roll" ></span>
                         <img src="img/profile/Imagen1.png" class="img-responsive profile"/>
                     </a>
-                    <p><br/>Hugo Dominguez<br/>CEO & Area Director Middle East</p>
+                    <p><br/><b>Hugo Dominguez</b><br/>CEO & Area Director Middle East</p>
                 </div>
                 <div class=" col-sm-4 wow fadeInUp text-center" data-wow-delay="0.3s">
                     <a class="overlayImg" href="http://www.linkedin.com/in/lisbeth-hallas-borum-8469866" target="_blank">
                         <span class="roll" ></span>
                         <img src="img/profile/Imagen2.png" class="img-responsive profile"/>
                     </a>
-                    <p><br/>Lisbeth Hallas-Borum<br/>Regulatory & Logistic Manager</p>
+                    <p><br/><b>Lisbeth Hallas-Borum</b><br/>Regulatory & Logistic Manager</p>
                 </div>
                 <div class=" col-sm-4 wow fadeInRight text-center" data-wow-delay="0.4s">
                     <a class="overlayImg" href="http://www.linkedin.com/in/borja-nespral" target="_blank">
                         <span class="roll" ></span>
                         <img src="img/profile/Imagen3.png" class="img-responsive profile"/>
                     </a>
-                    <p><br/>Borja Nespral<br/>Area Director Latin America</p>
+                    <p><br/><b>Borja Nespral</b><br/>Area Director Latin America</p>
                 </div>
             </div> <!-- end .row -->
         </div> <!-- end .container -->
@@ -396,11 +398,8 @@
                         <li>Our local partners in both continents continuously demand new and high quality products that can complement their portfolio. </li>
                     </ul>
                 </div>
-                <div class=" col-sm-6 wow fadeInLeft text-center" data-wow-delay="0.2s">
-                    <img class="img-responsive" src="img/Imagen4.png"/>
-                </div>
-                <div class=" col-sm-6 wow fadeInRight text-center" data-wow-delay="0.3s">
-                    <img class="img-responsive" src="img/Imagen5.png"/>
+                <div class=" col-sm-12 wow fadeInLeft text-center containerMap" data-wow-delay="0.2s">
+                    <div id="networkMap"></div>
                 </div>
             </div> <!-- end .row -->
         </div>
@@ -681,8 +680,57 @@ JavaScripts
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script src="https://code.highcharts.com/highcharts-3d.js"></script>
 <script src="https://code.highcharts.com/modules/data.js"></script>
+<script src="js/d3.min.js"></script>
+<script src="js/topojson.min.js"></script>
+<script src="js/datamaps.world.hires.min.js"></script>
 <script>
-
+    $(document).ready(function () {
+        var map = new Datamap({
+            element: document.getElementById('networkMap'),
+            fills: {
+                defaultFill: "#bfbfbf",
+                authorHasTraveledTo: "#004b4b"
+            },
+            geographyConfig: {
+                borderColor: '#8a8989',
+                highlightFillColor: '#1c6e9c',
+                highlightBorderColor: '#124765)',
+                highlightBorderWidth: 1,
+                highlightBorderOpacity: 1
+            },
+            data: {
+                BRA: {fillKey: "authorHasTraveledTo"},
+                BOL: {fillKey: "authorHasTraveledTo"},
+                COL: {fillKey: "authorHasTraveledTo"},
+                VEN: {fillKey: "authorHasTraveledTo"},
+                GUF: {fillKey: "authorHasTraveledTo"},
+                ECU: {fillKey: "authorHasTraveledTo"},
+                PER: {fillKey: "authorHasTraveledTo"},
+                PRY: {fillKey: "authorHasTraveledTo"},
+                ARG: {fillKey: "authorHasTraveledTo"},
+                URY: {fillKey: "authorHasTraveledTo"},
+                PAN: {fillKey: "authorHasTraveledTo"},
+                HND: {fillKey: "authorHasTraveledTo"},
+                GTM: {fillKey: "authorHasTraveledTo"},
+                MEX: {fillKey: "authorHasTraveledTo"},
+                CHL: {fillKey: "authorHasTraveledTo"},
+                NIC: {fillKey: "authorHasTraveledTo"},
+                CUB: {fillKey: "authorHasTraveledTo"},
+                BHS: {fillKey: "authorHasTraveledTo"},
+                DOM: {fillKey: "authorHasTraveledTo"},
+                PRI: {fillKey: "authorHasTraveledTo"},
+                EGY: {fillKey: "authorHasTraveledTo"},
+                TUR: {fillKey: "authorHasTraveledTo"},
+                SAU: {fillKey: "authorHasTraveledTo"},
+                JOR: {fillKey: "authorHasTraveledTo"},
+                SYR: {fillKey: "authorHasTraveledTo"},
+                IRQ: {fillKey: "authorHasTraveledTo"},
+                IRN: {fillKey: "authorHasTraveledTo"},
+                YEM: {fillKey: "authorHasTraveledTo"},
+                OMN: {fillKey: "authorHasTraveledTo"}
+            }
+        });
+    });
     $('ul.nav li.dropdown').hover(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);
     }, function () {

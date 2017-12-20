@@ -15,8 +15,8 @@ body {
     background-color: #fff;
     font-family: 'Open Sans', sans-serif;
     line-height: 1;
-    font-size: 17px;
-    color: #696969;
+    font-size: 18px;
+    color: #292929;
 }
 
 ol, ul {
@@ -82,35 +82,29 @@ body > section {
 }
 
 .section-title h2 {
+    display: table;
+    white-space: nowrap;
+    
     color: #1f2021;
     font-size: 30px;
     position: relative;
-    margin-bottom: 25px;
-    padding-bottom: 27px;
+    margin-bottom: 30px;
     text-transform: uppercase;
 }
-
 .section-title h2:before {
-    border-bottom: 1px solid #1f2021;
-    bottom: 0;
-    content: "";
-    left: 50%;
-    margin-left: -50px;
-    position: absolute;
-    width: 100px;
+    right: 1.5%;
 }
-
 .section-title h2:after {
-    background: none repeat scroll 0 0 #fff;
-    border: 1px solid #1F2021;
-    border-radius: 25px;
-    bottom: -6px;
-    content: "";
-    height: 11px;
-    left: 50%;
-    margin-left: -5.5px;
-    position: absolute;
-    width: 11px;
+    left: 1.5%;
+}
+.section-title h2:before, 
+.section-title h2:after {
+    border-top: 1px solid #1f2021;
+    content: '';
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 45%;
 }
 
 .section-title p {
@@ -280,7 +274,7 @@ body > section {
 
 .carousel-caption > div {
     background-color: rgba(15,116,143,0.85);
-    padding: 60px 60px 80px 60px;
+    padding: 60px 60px 60px 60px;
     position: absolute;
     text-align: left;
     top: 25%;
@@ -290,7 +284,7 @@ body > section {
 #home-carousel .carousel-inner h2 {
     color: #ffffff;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 30px;
     margin-bottom: 20px;
     text-shadow: none;
     text-transform: uppercase;
@@ -305,11 +299,11 @@ body > section {
 
 #home-carousel .carousel-inner ul {
     color: #FFFFFF;
-    line-height: 18px;
+    line-height: 24px;
     font-size: 18px;
     margin-top: 0;
     padding-left: 30px;
-    list-style-type: circle;
+    list-style-type: disc;
     text-shadow:none;
 }
 
@@ -1059,9 +1053,9 @@ ul.withCheck {
 ============================================================*/
 
 #WhoWeAre p{
-    font-size: 17px;
-    line-height: 26px;
-    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
 }
 #WhoWeAre .profile{
     padding-top: 25px;
@@ -1181,6 +1175,20 @@ ul.withCheck {
 }
 #Service .fa-li{
     top:-3px;
+}
+
+/*============================================================
+    our network
+============================================================*/
+.containerMap{
+    padding: 0;
+}
+
+.containerMap #networkMap{
+    position: relative; 
+    width: 750px;
+    height: 400px; 
+    margin:0 auto;
 }
 
 /*============================================================
