@@ -13,16 +13,11 @@ License     : GPL
 
 body {
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1;
     font-size: 18px;
+    line-height: 22px;
     color: #292929;
-}
-
-ol, ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }
 
 figure, p {
@@ -52,7 +47,7 @@ a:focus, a:hover {
 
 h1, h2, h3,
 h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
     margin: 0;
 }
@@ -70,7 +65,9 @@ h4, h5, h6 {
 .clear {
     *zoom: 1;
 }
-
+.border-radius{
+    border-radius: 4px;
+}
 body > section {
     padding: 100px 0;
     background-color: #fff;
@@ -78,24 +75,24 @@ body > section {
 
 .section-title {
     margin: 0 auto 50px;
-    width: 520px;
 }
 
 .section-title h2 {
-    display: table;
+    display: inline-table;
     white-space: nowrap;
-    
+
     color: #1f2021;
     font-size: 30px;
     position: relative;
     margin-bottom: 30px;
+    text-align: center;
     text-transform: uppercase;
 }
 .section-title h2:before {
-    right: 1.5%;
+    right: 5%;
 }
 .section-title h2:after {
-    left: 1.5%;
+    left: 5%;
 }
 .section-title h2:before, 
 .section-title h2:after {
@@ -104,12 +101,11 @@ body > section {
     display: table-cell;
     position: relative;
     top: 0.5em;
-    width: 45%;
+    width: 30%;
 }
 
 .section-title p {
     line-height: 25px;
-    font-weight: 300;
     font-size: 18px;
 }
 
@@ -157,6 +153,7 @@ body > section {
 .animated-nav .navigation .navbar-nav > li > a {
     padding: 23px 25px;
 }
+
 
 /*#navigation > .container {
   border-bottom: 1px solid #636364;
@@ -271,13 +268,18 @@ body > section {
     z-index: 11;
     text-align: left;
 }
+#home-carousel {
+    height: 100vh;
+    margin-right: -15px;
+    margin-left: -15px;
+}
 
 .carousel-caption > div {
     background-color: rgba(15,116,143,0.85);
     padding: 60px 60px 60px 60px;
     position: absolute;
     text-align: left;
-    top: 25%;
+    top: 20%;
     width: 100%;
 }
 
@@ -306,7 +308,65 @@ body > section {
     list-style-type: disc;
     text-shadow:none;
 }
-
+.downArrow{
+    color: #fff;
+    position: absolute;
+    bottom: 5%;
+    left: calc(50% - 60px);
+}
+.bounce {
+    -moz-animation: bounce 3s infinite;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
+}
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
 #nav-arrows > a {
     border: 1px solid #fff;
     color: #fff;
@@ -372,7 +432,9 @@ body > section {
     padding-left: 20px;
 }
 
-
+#Service ul.list-unstyled{
+    font-size: 16px;
+}
 
 
 .service-item {
@@ -615,7 +677,6 @@ figcaption.mask span {
 }
 
 .fact-item p {
-    font-weight: 300;
 }
 
 
@@ -1012,13 +1073,15 @@ figcaption.mask span {
 ul.withCheck { 
     padding-left:20px; 
     list-style:none;
-    margin-bottom:40px; 
+    margin-bottom:62px; 
 }
 
 .withCheck li { 
     margin-bottom:10px; 
-    font-size: 17px;
+    line-height: 24px;
+    font-size: 20px;
     color: #1f2021;
+    font-weight: bold;
 }
 
 .withCheck li:before {    
@@ -1058,7 +1121,7 @@ ul.withCheck {
     margin-bottom: 20px;
 }
 #WhoWeAre .profile{
-    padding-top: 25px;
+    border-radius: 6px;
     width: 200px;
     margin: 0 auto;
 }
@@ -1100,7 +1163,7 @@ ul.withCheck {
 ============================================================*/
 
 #Values{
-    background-color: #eee;
+    background-color: #d0eae6;
 }
 
 .fa-custom-size {
@@ -1108,6 +1171,9 @@ ul.withCheck {
 }
 .fa-custom-size .fa-circle{
     color:#333;
+}
+.thumbnail{
+    min-height: 215px;
 }
 
 /*============================================================
@@ -1121,7 +1187,7 @@ ul.withCheck {
 ============================================================*/
 
 #Network{
-    background-color: #eee;
+    background-color: #d0eae6;
 }
 #Network .img-responsive{
     margin: 0 auto;
@@ -1136,12 +1202,11 @@ ul.withCheck {
     padding-left:20px; 
     list-style-type: disc;
     margin-bottom:40px; 
+    margin-top:50px; 
 }
 
 #Opportunities li { 
     margin-bottom:15px; 
-    font-size: 20px;
-    color: #1f2021;
 }
 
 /*============================================================
@@ -1149,17 +1214,28 @@ ul.withCheck {
 ============================================================*/
 
 #Challenges{
-    background-color: #eee;
+    background-color: #d0eae6;
 }
 
-#Challenges h3{
+#Challenges .subtitle h3{
     font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
 #Challenges .column p{
-    font-size: 17px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 40px;
 }
-
+#Challenges .subtitle{
+    min-height: 60px;
+    text-align:center;
+}
+#Challenges .contentOne, 
+#Challenges .contentTwo{
+    min-height: 180px;
+}
 /*============================================================
     Service
 ============================================================*/
@@ -1186,8 +1262,8 @@ ul.withCheck {
 
 .containerMap #networkMap{
     position: relative; 
-    width: 750px;
-    height: 400px; 
+    width: 725px;
+    height: 390px; 
     margin:0 auto;
 }
 
@@ -1195,7 +1271,7 @@ ul.withCheck {
     OurPartner
 ============================================================*/
 #OurPartner{
-    background-color: #eee;
+    background-color: #d0eae6;
 }
 #OurPartner img{
     margin: 0 auto;

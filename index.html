@@ -19,7 +19,7 @@
         <!--
         Google Fonts
         ============================================= -->
-        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 
         <!--
         CSS
@@ -50,7 +50,7 @@
         <!--
         Fixed Navigation
         ==================================== -->
-        <header id="navigation" class="navbar-fixed-top" style="background-color: rgba(255, 255, 255, 0.4);">
+        <header id="navigation" class="navbar-fixed-top" style="background-color: rgba(255, 255, 255, 0.2);">
             <div class="container">
 
                 <div class="navbar-header">
@@ -96,7 +96,7 @@
                         <li><a href="#Service">Service</a></li>
                         <li><a href="#OurPartner">Our Partner</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li><a href="https://www.linkedin.com/company/10607481/" target="_blank"><i style="font-size: 20px;" class="fa fa-linkedin-square"></i></a></li>
+                        <li class="hidden-sm"><a href="https://www.linkedin.com/company/10607481/" target="_blank"><i style="font-size: 20px;" class="fa fa-linkedin-square"></i></a></li>
                     </ul>
                 </nav>
                 <!-- /main nav -->
@@ -112,75 +112,38 @@
     <!--
     Home Slider
     ==================================== -->
-    <section id="home"> 
+    <section id="home">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <!--<video autoplay loop muted poster="background-vid.png" id="background-vid">
-                        <source src="intro.mp4" type="video/mp4">
-                    </video>-->
                     <div id="home-carousel" class="carousel slide" data-interval="false">
-                        <!--<ol class="carousel-indicators">
-                            <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#home-carousel" data-slide-to="1"></li>
-                            <li data-target="#home-carousel" data-slide-to="2"></li>
-                        </ol>-->
-                        <!--/.carousel-indicators-->
-
                         <div class="carousel-inner">
                             <div class="item active" style="background-image: url('img/slider/business2.jpg')">
                                 <div class="carousel-caption">
-                                    <div class="animated bounceInRight">
+                                    <div class="animated bounceInRight border-radius">
                                         <div class="blur"></div>
                                         <div class="content">
                                             <h2>We develop Middle East & Latin America markets for Innovative Medical Companies.</h2>
                                             <p>Our experience in the market and a reliable distribution network guarantees an efficient solution to quickly increase income and growth for our partners.</p>
                                             <div style="padding:20px;">
-                                            <p>We work as an outsourced Area Manager:</p>
-                                            <ul>
-                                                <li>Finding the right distributor partner in each country to suit your needs.</li>
-                                                <li>Facilitating all local regulatory approvals.</li>
-                                                <li>Executing your marketing plan together with local partners.</li>
-                                                <li>Managing the sales process within the area</li>
-                                            </ul>
+                                                <p>We work as an outsourced Area Manager:</p>
+                                                <ul>
+                                                    <li>Finding the right distributor partner in each country to suit your needs.</li>
+                                                    <li>Facilitating all local regulatory approvals.</li>
+                                                    <li>Executing your marketing plan together with local partners.</li>
+                                                    <li>Managing the sales process within the area</li>
+                                                </ul>
                                             </div>
                                             <p>We work based on success fee, thus avoiding fixed costs and limiting risks for you.</p><br/>
                                             <h2>Stay focused on your core markets and leave the rest to us!</h2>
                                         </div>
                                     </div>
                                 </div>
-                            </div>              
-
-                            <!--<div class="item">                
-                                <div class="carousel-caption">
-                                    <div class="animated bounceInDown">
-                                        <h2>SERVICES</h2>
-                                        <p>Outsource an Area Manager and stay focus on your core business! <br/>
-                                        In PEMEA Consulting  we work as an outsourced Area Manager, only based on success and avoiding any costs for the principals. Through our reliable distribution network we guarantee an efficient solution to quickly increase revenue, income and growth for our partners.</p>
-                                        <h2>Would you like to know more about our services?</h2>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">                 
-                                <div class="carousel-caption">
-                                    <div class="animated bounceInUp">
-                                        <h2>WHAT WE BELIEVE</h2>
-                                        <p>Stay focus on your market and leave the rest to us!<br/>We understand what is needed in a successful business relationship and aim to be your trusted partner from day 1</p>
-                                        <h2>Check out our Values</h2>
-                                    </div>
-                                </div>
-                            </div>-->
+                            </div>     
                         </div>
-                        <!--/.carousel-inner-->
-                        <!--<nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
-                            <a class="sl-prev hidden-xs" href="#home-carousel" data-slide="prev">
-                                <i class="fa fa-angle-left fa-3x"></i>
-                            </a>
-                            <a class="sl-next" href="#home-carousel" data-slide="next">
-                                <i class="fa fa-angle-right fa-3x"></i>
-                            </a>
-                        </nav>-->
+                    </div>
+                    <div class="downArrow bounce">
+                        <a href="#WhoWeAre"><img width="60" height="60" alt="" src="img/two-down-chevron.svg" /></a>
                     </div>
                 </div>
             </div>
@@ -198,7 +161,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-title text-center wow fadeInDown">
+                    <div class="section-title text-center wow">
                         <h2>WHO WE ARE</h2>    
                         <!--<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>-->
                     </div>
@@ -214,6 +177,7 @@
                     <p>We come from a European background and after many years of living and working abroad our capability to understand and build bridges between different business cultures has become our main asset to success.</p>
                 </div>
             </div> <!-- end .row -->
+            <br/><br/><br/>
             <div class="row">
                 <div class=" col-sm-4 wow fadeInLeft text-center" data-wow-delay="0.2s">
                     <a class="overlayImg" href="http://www.linkedin.com/in/hugo-dominguez-b7782ba" target="_blank">
@@ -251,286 +215,309 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="section-title text-center wow fadeInDown">
+                    <div class="section-title text-center wow">
                         <h2>OUR VALUES</h2>    
-                        <p>We understand what is needed in a business relationship. Our business culture is:</p>
+                        <p><b>We understand what is needed in a business relationship. <br/> Our business culture is:</b></p>
                     </div>
                 </div>
             </div><!-- end .row -->
             <div class="row">
-                <div class=" col-sm-4 wow fadeInLeft text-center" data-wow-delay="0.1s">
-
-                    <div class="subtitle text-center">
-                        <span class="fa-stack fa-custom-size">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-signal fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h3>RELIABILITY</h3>
-                        <p>To us, reliability means meeting or exceeding our clients’ expectations and keeping the client informed throughout all of the stages.</p>
-                    </div>
-                </div>
-                <div class=" col-sm-4 wow fadeInUp text-center" data-wow-delay="0.2s">
-                    <div class="subtitle text-center">
-                        <span class="fa-stack fa-custom-size">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-clone fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h3>FLEXIBILITY</h3>
-                        <p>No extra resources! We work by success rate offering an easy and costless way to expand your business</p>
-                    </div>
-                </div>
-                <div class=" col-sm-4 wow fadeInRight text-center" data-wow-delay="0.3s">
-                    <div class="subtitle text-center">
-                        <span class="fa-stack fa-custom-size">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-list fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h3>PROACTIVITY</h3>
-                        <p>We take the initiative. We don’t wait for things to happen, we make them happen</p>
-                    </div>
-                </div>
-            </div> <!-- end .row -->
-            <div class="row">
-                <div class=" col-sm-4 wow fadeInLeft text-center" data-wow-delay="0.1s">
-                    <div class="subtitle text-center">
+                <div class=" col-sm-4 col-sm-offset-2 fadeInLeft text-center" data-wow-delay="0.1s">
+                    <div class="thumbnail">
                         <span class="fa-stack fa-custom-size">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
                         </span>
                         <h3>PROFESSIONALISM</h3>
-                        <p>Driven by a culture of professionalism, we provide efficient high quality services </p>
+                        <div class="caption text-justify">
+                            <p>Driven by a culture of professionalism, we provide efficient high quality services </p>
+                        </div>
                     </div>
                 </div>
-                <div class=" col-sm-4 wow fadeInUp text-center" data-wow-delay="0.2s">
-                    <div class="subtitle text-center">
+                <div class=" col-sm-4 fadeInUp text-center" data-wow-delay="0.1s">
+                    <div class="thumbnail">
                         <span class="fa-stack fa-custom-size">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-thumbs-o-up fa-stack-1x fa-inverse"></i>
                         </span>
                         <h3>INTEGRITY/RESPECT </h3>
-                        <p>We work as the extended arm of the company respecting their brand, values, mission and vision</p>
+                        <div class="caption text-justify">
+                            <p>We work as the extended arm of the company respecting their brand, values, mission and vision.</p>
+                        </div>
                     </div>
                 </div>
-                <div class=" col-sm-4 wow fadeInRight text-center" data-wow-delay="0.3s">
-                    <div class="subtitle text-center">
+                <div class="col-sm-4 col-sm-offset-2 fadeInUp text-center" data-wow-delay="0.2s">
+                    <div class="thumbnail">
+                        <span class="fa-stack fa-custom-size">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-clone fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h3>FLEXIBILITY</h3>
+                        <div class="caption text-justify">
+                            <p>No extra resources! We work by success rate offering an easy and costless way to expand your business</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 fadeInRight text-center" data-wow-delay="0.3s">
+                    <div class="thumbnail">
                         <span class="fa-stack fa-custom-size">
                             <i class="fa fa-circle fa-stack-2x"></i>
                             <i class="fa fa-line-chart fa-stack-1x fa-inverse"></i>
                         </span>
                         <h3>COMMITMENT</h3>
-                        <p>A firm commitment to the development and successful growth of our projects is part of our DNA</p>
+                        <div class="caption text-justify">
+                            <p>A firm commitment to the development and successful growth of our projects is part of our DNA.</p>
+                        </div>
                     </div>
                 </div>
-            </div> <!-- end .row -->
-        </div> <!-- end .container -->
-    </section>
-    <!--
-    End #Values
-    ========================== -->
-
-
-    <!--
-    #MedicalSpecialties
-    ========================== -->
-
-    <section id="MedicalSpecialties">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center wow fadeInDown">
-                        <h2>WE ARE SPECIALIZED IN:</h2>    
-                        <!--<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>-->
+                <div class=" col-sm-4 col-sm-offset-2 fadeInRight text-center" data-wow-delay="0.3s">
+                    <div class="thumbnail">
+                        <span class="fa-stack fa-custom-size">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-list fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h3>PROACTIVITY</h3>
+                        <div class="caption text-justify">
+                            <p>We take the initiative. We don’t wait for things to happen, we make them happen</p>
+                        </div>
                     </div>
+                </div>
+                <div class=" col-sm-4 fadeInLeft text-center" data-wow-delay="0.1s">
+                    <div class="thumbnail">
+                        <span class="fa-stack fa-custom-size">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-signal fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h3>RELIABILITY</h3>
+                        <div class="caption text-justify">
+                            <p>To us, reliability means meeting or exceeding our clients’ expectations and keeping the client informed throughout all of the stages.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end .row -->
+            <div class="row">
+            </div>
+        </div> <!-- end .row -->
+    </div> <!-- end .container -->
+</section>
+<!--
+End #Values
+========================== -->
+
+
+<!--
+#MedicalSpecialties
+========================== -->
+
+<section id="MedicalSpecialties">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center wow ">
+                    <h2>WE ARE SPECIALIZED IN:</h2>    
+                    <!--<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.</p>-->
                 </div>
             </div>
-            <div class="row">
-                <div class=" col-sm-7 wow fadeInLeft text-center" data-wow-delay="0.1s">
-                    <div class="subtitle text-center">
-                        <img class="img-responsive" src="img/operatingTheater.jpg"/>
-                    </div>
-                </div>
-                <div class=" col-sm-5 wow fadeInRight text-center" data-wow-delay="0.2s">
-                    <div class="subtitle text-center">
-                        <ul class="withCheck">
-                            <li>Orthopedics</li>
-                            <li>Spine </li>
-                            <li>Sports Medicine</li>
-                            <li>Trauma</li>
-                            <li>Biologics</li>
-                        </ul>
-                        <ul class="withCheck">
-                            <li>Wound Care</li>
-                            <li>Neuro Surgery </li>
-                            <li>Cardiothoracic</li>
-                            <li>General Surgery </li>
-                        </ul>
-                        <ul class="withCheck">
-                            <li>Anesthesia</li>
-                            <li>ICU </li>
-                        </ul>
-                    </div>
-                </div>
-            </div> <!-- end .row -->
         </div>
-    </section>
-    <!--
-    End #MedicalSpecialties
-    ========================== -->
-
-    <!--
-    #Network
-    ========================== -->
-    <section id="Network">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center wow fadeInUp">
-                        <h2>OUR NETWORK:</h2>    
-                        <p>Selecting the right distributor for your product is vital to ensure the success of your business in the marketplace.</p>
-                    </div>
-                </div>
+        <div class="row">
+            <div class=" col-sm-8 wow fadeInLeft text-center" data-wow-delay="0.1s">
+                <img class="img-responsive border-radius" src="img/operatingTheater.jpg"/>
             </div>
-            <div class="row">
-                <div class=" col-sm-12 wow fadeInDown text-center" data-wow-delay="0.1s">
-                    <ul class="withCheck">
-                        <li>We work with an extensive network of reliable distributors, hospitals and doctors in more than 20 countries. </li>
-                        <li>Our distributors are carefully selected based on their strategic fit, reputation in the market and existing customer relationships. </li>
-                        <li>Our local partners in both continents continuously demand new and high quality products that can complement their portfolio. </li>
-                    </ul>
-                </div>
-                <div class=" col-sm-12 wow fadeInLeft text-center containerMap" data-wow-delay="0.2s">
-                    <div id="networkMap"></div>
-                </div>
+            <div class=" col-sm-4 wow fadeInRight " data-wow-delay="0.2s">
+                <ul class="withCheck">
+                    <li>Orthopedics</li>
+                    <li>Spine </li>
+                    <li>Sports Medicine</li>
+                    <li>Trauma</li>
+                    <li>Biologics</li>
+                </ul>
+                <ul class="withCheck">
+                    <li>Wound Care</li>
+                    <li>Neuro Surgery </li>
+                    <li>Cardiothoracic</li>
+                    <li>General Surgery </li>
+                </ul>
+                <ul class="withCheck">
+                    <li>Anesthesia</li>
+                    <li>ICU </li>
+                </ul>
             </div> <!-- end .row -->
         </div>
-    </section>
-    <!--
-    End #Network
-    ========================== -->
+</section>
+<!--
+End #MedicalSpecialties
+========================== -->
 
-
-    <!--
-    #Opportunities
-    ========================== -->
-
-    <section id="Opportunities">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center wow fadeInUp">
-                        <h2>OPPORTUNITIES</h2>    
-                        <!--<p>Selecting the right distributor for your product is vital to ensure the success of your business in the marketplace.</p>-->
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class=" col-sm-7 wow fadeInLeft text-center" data-wow-delay="0.1s">
-                    <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
-                </div>
-                <div class=" col-sm-5 wow fadeInRight" data-wow-delay="0.2s">
-                    <ul>
-                        <li>Big markets with a population of over 1.000 million people. </li>
-                        <li>Emerging economies and excellent demographic conditions. </li>
-                        <li>Limited number of players and competitors. </li>
-                        <li>Payment in advance is the common payment term. </li>
-                        <li>Huge potential growth since many medical technologies have not yet been developed in the areas. </li>
-                    </ul>
+<!--
+#Network
+========================== -->
+<section id="Network">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center wow ">
+                    <h2>OUR NETWORK:</h2>    
+                    <p><b>Selecting the right distributor for your product is vital to ensure the success of your business in the marketplace.</b></p>
                 </div>
             </div>
         </div>
-    </section>
-    <!--
-    End #Opportunities
-    ========================== -->
-
-    <!--
-    #Challenges
-    ========================== -->
-    <section id="Challenges">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center wow fadeInUp">
-                        <h2>CHALLENGES</h2>    
-                        <p>Choosing the right partner can make the difference between success and failure which is why we encourage companies not to go with the first option but always keep in mind the following pitfalls when choosing your local partner.</p>
-                    </div>
-                </div>
+        <div class="row">
+            <div class=" col-sm-12 wow fadeInDown text-left" data-wow-delay="0.1s">
+                <ul>
+                    <li>We work with an extensive network of reliable distributors, hospitals and doctors in more than 20 countries. </li>
+                    <li>Our distributors are carefully selected based on their strategic fit, reputation in the market and existing customer relationships. </li>
+                    <li>Our local partners in both continents continuously demand new and high quality products that can complement their portfolio. </li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="column col-sm-4 wow fadeInLeft text-center" data-wow-delay="0.1s">
-                    <div class="subtitle text-center">
-                        <h3>Language and business culture barriers</h3>
-                        <p>Navigating cross-cultural communication, etiquettes and hierarchy can be a big challenge when sitting on the other side of the globe. The most effective distribution partners for your business might lack in English or general knowledge of your business culture. <b>In PEMEA Consulting we are experienced selecting the potential distributor, evaluating a full range of possible partners, knowing or sharing their culture, analyzing how they operate, sales and marketing capabilities, financial stability, knowledge of the market, customer relationships and more.</b> </p>
-                    </div>
-                </div>
-                <div class="column col-sm-4 wow fadeInDown" data-wow-delay="0.2s">
-                    <div class="subtitle text-center">
-                        <h3>Complexity of distribution</h3>
-                        <p>In the Middle East most medical products are being sold through big tenders requiring an immense promotional work beforehand. In South America medical product distribution is still evolving and many distributors do not offer effective reach throughout the whole country. <b>In PEMEA Consulting we understand the strengths and weaknesses of each potential partner and how they fit into the distribution system are critical considerations in making the best long-term partner choices.</b></p>
-                    </div>
-                </div>
-                <div class="column col-sm-4 wow fadeInRight" data-wow-delay="0.3s">
-                    <div class="subtitle text-center">
-                        <h3>Regulation & reimbursement challenges</h3>
-                        <p>The regulatory structure in the Middle East & Latin American countries is neither uniform nor consistent and gaining success in new markets can be tough if your products are late to market or come without appropriate reimbursement. <b>In PEMEA Consulting we have the experience to qualify potential partners and make sure your products find the fastest way to market and profitability.</b></p>
-                    </div>
+            <div class=" col-sm-12 wow fadeInLeft text-center containerMap" data-wow-delay="0.2s">
+                <div id="networkMap"></div>
+            </div>
+        </div> <!-- end .row -->
+    </div>
+</section>
+<!--
+End #Network
+========================== -->
+
+
+<!--
+#Opportunities
+========================== -->
+
+<section id="Opportunities">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center wow ">
+                    <h2>OPPORTUNITIES</h2>    
+                    <!--<p>Selecting the right distributor for your product is vital to ensure the success of your business in the marketplace.</p>-->
                 </div>
             </div>
         </div>
-    </section>
-    <!--
-    End #Challenges
-    ========================== -->
+        <div class="row">
+            <div class=" col-sm-5 wow fadeInRight" data-wow-delay="0.2s">
+                <ul>
+                    <li>Big markets with a population of over 1.000 million people. </li>
+                    <li>Emerging economies and excellent demographic conditions. </li>
+                    <li>Limited number of players and competitors. </li>
+                    <li>Payment in advance is the common payment term. </li>
+                    <li>Huge potential growth since many medical technologies have not yet been developed in the areas. </li>
+                </ul>
+            </div>
+            <div class=" col-sm-7 wow fadeInLeft text-center" data-wow-delay="0.1s">
+                <div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--
+End #Opportunities
+========================== -->
 
-
-    <!--
-    #Service
-    ========================== -->
-    <section id="Service">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="section-title text-center wow fadeInUp">
-                        <h2>WHAT WE DO</h2>    
-                        <p>The best way to describe our services is as your outsourced Area Manager
-                        </p>
-                    </div>
+<!--
+#Challenges
+========================== -->
+<section id="Challenges">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center wow fadeInUp">
+                    <h2>CHALLENGES</h2>    
+                    <p><b>Choosing the right partner can make the difference between success and failure which is why we encourage companies not to go with the first option but always keep in mind the following pitfalls when choosing your local partner.</b></p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 wow fadeInUp">
-                    <p style="color: #1f2021;">We help you identify the best possible distribution partners in the Middle East & Latin America for your business and we take care of all entry barriers and offer flexible and efficient solutions to increase revenue and income in a fast, simple and costless way.</p>
-                    <br/><br/>
+        </div>
+        <div class="row">
+            <div class="column col-sm-4 wow fadeInLeft" data-wow-delay="0.1s">
+                <div class="subtitle">
+                    <h3>Language and business culture barriers</h3>
                 </div>
-                <div class="col-md-6 wow fadeInLeft">
-                    <ul class="list-unstyled fa-ul">
-                        <li><i class="fa-li fa fa-bar-chart " aria-hidden="true"></i> Continuous market assessment </li>
-                        <li><i class="fa-li fa fa-tasks " aria-hidden="true"></i> Representation of the brand, values and messages of the principles </li>
-                        <li><i class="fa-li fa fa-graduation-cap " aria-hidden="true"></i> Research and assign the best partners in the region  </li>
-                        <li>
-                            <i class="fa-li fa fa-ticket " aria-hidden="true"></i> Sales team/s training and  development for professional level consulting selling  </li>
-                        <li><i class="fa-li fa fa-plane " aria-hidden="true"></i> Local event planning  </li>
-                        <li><i class="fa-li fa fa-pie-chart " aria-hidden="true"></i> Market segmentation, prioritization and sales force deployment </li>
-                        <li><i class="fa-li fa fa-tachometer " aria-hidden="true"></i> KOL Management </li>
-                        <li><i class="fa-li fa fa-list " aria-hidden="true"></i> In-market visit planning  </li>
-                    </ul>
-                </div>
-                <div class="col-md-6 wow fadeInRight">
-                    <ul class="list-unstyled fa-ul">
 
-                        <li><i class="fa-li fa fa-search " aria-hidden="true"></i> Research & Assign the best partners from our trusted network  that meet the selection criteria for your business success  </li>
-                        <li><i class="fa-li fa fa-location-arrow " aria-hidden="true"></i> Coordination and execution of the annual marketing plan     </li>
-                        <li><i class="fa-li fa fa-sitemap " aria-hidden="true"></i> Marketing adapted to a focus territory or product planning  </li>
-                        <li><i class="fa-li fa fa-paper-plane-o " aria-hidden="true"></i> Preparation of new product launches  </li>
-                        <li><i class="fa-li fa fa-globe " aria-hidden="true"></i> International events planning  </li>
-                        <li><i class="fa-li fa fa-pencil-square-o " aria-hidden="true"></i> Implementation of marketing guidelines  </li>
-                        <li><i class="fa-li fa fa-road " aria-hidden="true"></i> Regulatory pathway    </li>
-                        <li><i class="fa-li fa fa-users " aria-hidden="true"></i> Professional education and training for pre-sales (create –to-demand and post-sales for application and consumption)   </li>
-                    </ul>
+                <div class="contentOne">
+                    <p>Navigating cross-cultural communication, etiquettes and hierarchy can be a big challenge when sitting on the other side of the globe. The most effective distribution partners for your business might lack in English or general knowledge of your business culture. </p>
+                </div>
+                <div class="contentTwo">
+                    <p><b>In PEMEA Consulting we are experienced selecting the potential distributor, evaluating a full range of possible partners, knowing or sharing their culture, analyzing how they operate, sales and marketing capabilities, financial stability, knowledge of the market, customer relationships and more.</b> </p>
+                </div>
+            </div>
+            <div class="column col-sm-4 wow fadeInDown" data-wow-delay="0.2s">
+                <div class="subtitle ">
+                    <h3>Complexity of distribution</h3>
+                </div>
+                <div class="contentOne">
+                    <p>In the Middle East most medical products are being sold through big tenders requiring an immense promotional work beforehand. In South America medical product distribution is still evolving and many distributors do not offer effective reach throughout the whole country. </p>
+                </div>
+                <div class="contentTwo">
+                    <p><b>In PEMEA Consulting we understand the strengths and weaknesses of each potential partner and how they fit into the distribution system are critical considerations in making the best long-term partner choices.</b></p>
+                </div>
+            </div>
+            <div class="column col-sm-4 wow fadeInRight" data-wow-delay="0.3s">
+                <div class="subtitle">
+                    <h3>Regulation & reimbursement challenges</h3>
+                </div>
+                <div class="contentOne">
+                    <p>The regulatory structure in the Middle East & Latin American countries is neither uniform nor consistent and gaining success in new markets can be tough if your products are late to market or come without appropriate reimbursement. </p>
+                </div>
+                <div class="contentTwo">
+                    <p><b>In PEMEA Consulting we have the experience to qualify potential partners and make sure your products find the fastest way to market and profitability.</b></p>
                 </div>
             </div>
         </div>
     </div>
+</section>
+<!--
+End #Challenges
+========================== -->
+
+
+<!--
+#Service
+========================== -->
+<section id="Service">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title text-center wow ">
+                    <h2>WHAT WE DO</h2>    
+                    <p><b>The best way to describe our services is as your outsourced Area Manager</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 wow fadeInUp">
+                <p style="line-height: 24px;">We help you identify the best possible distribution partners in the Middle East & Latin America for your business and we take care of all entry barriers and offer flexible and efficient solutions to increase revenue and income in a fast, simple and costless way.</p>
+                <br/><br/>
+            </div>
+            <div class="col-md-6 wow fadeInLeft">
+                <ul class="list-unstyled fa-ul">
+                    <li><i class="fa-li fa fa-bar-chart " aria-hidden="true"></i> Continuous market assessment </li>
+                    <li><i class="fa-li fa fa-tasks " aria-hidden="true"></i> Representation of the brand, values and messages of the principles </li>
+                    <li><i class="fa-li fa fa-graduation-cap " aria-hidden="true"></i> Research and assign the best partners in the region  </li>
+                    <li>
+                        <i class="fa-li fa fa-ticket " aria-hidden="true"></i> Sales team/s training and  development for professional level consulting selling  </li>
+                    <li><i class="fa-li fa fa-plane " aria-hidden="true"></i> Local event planning  </li>
+                    <li><i class="fa-li fa fa-pie-chart " aria-hidden="true"></i> Market segmentation, prioritization and sales force deployment </li>
+                    <li><i class="fa-li fa fa-tachometer " aria-hidden="true"></i> KOL Management </li>
+                    <li><i class="fa-li fa fa-list " aria-hidden="true"></i> In-market visit planning  </li>
+                </ul>
+            </div>
+            <div class="col-md-6 wow fadeInRight">
+                <ul class="list-unstyled fa-ul">
+
+                    <li><i class="fa-li fa fa-search " aria-hidden="true"></i> Research & Assign the best partners from our trusted network  that meet the selection criteria for your business success  </li>
+                    <li><i class="fa-li fa fa-location-arrow " aria-hidden="true"></i> Coordination and execution of the annual marketing plan     </li>
+                    <li><i class="fa-li fa fa-sitemap " aria-hidden="true"></i> Marketing adapted to a focus territory or product planning  </li>
+                    <li><i class="fa-li fa fa-paper-plane-o " aria-hidden="true"></i> Preparation of new product launches  </li>
+                    <li><i class="fa-li fa fa-globe " aria-hidden="true"></i> International events planning  </li>
+                    <li><i class="fa-li fa fa-pencil-square-o " aria-hidden="true"></i> Implementation of marketing guidelines  </li>
+                    <li><i class="fa-li fa fa-road " aria-hidden="true"></i> Regulatory pathway    </li>
+                    <li><i class="fa-li fa fa-users " aria-hidden="true"></i> Professional education and training for pre-sales (create –to-demand and post-sales for application and consumption)   </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
 <!--
 End #Service
@@ -544,9 +531,9 @@ End #Service
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="section-title text-center wow fadeInUp">
+                <div class="section-title text-center wow ">
                     <h2>OUR PARTNERS</h2>
-                    <p style="color: #1f2021;">Starting from scratch in 2016, we are present in more than 20 countries and have faced regulatory processes in every continent of the world. We are forecasting sales to our current customers for XXX Million USD in 2018.</p>
+                    <p> <b>Starting from scratch in 2016, we are present in more than 20 countries and have faced regulatory processes in every continent of the world. We are forecasting sales to our current customers for XXX Million USD in 2018.</b></p>
                     <br/><br/>
                 </div>
             </div>
@@ -578,7 +565,7 @@ End #OurPartner
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="section-title text-center wow fadeInDown">
+                <div class="section-title text-center wow ">
                     <h2>GET IN TOUCH</h2>
                     <!--<p>To contact us please use the form or send your inquiry directly to the following email: <a href="mailto:info@pinnacle-emea.com">info@pinnacle-emea.com</a></p>-->
                 </div>
@@ -623,7 +610,7 @@ End #contact
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="footer-logo wow fadeInDown">
+                <div class="footer-logo wow ">
                     <img height="70px" src="img/Pemea-negativo.png" alt="logo">
                 </div>
 

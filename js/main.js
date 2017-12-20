@@ -13,17 +13,22 @@ $(function(){
 
     jQuery(window).scroll(function () {
         if (jQuery(window).scrollTop() > 400) {
-            jQuery("#navigation").css("background-color","#00C7FC");
-            jQuery("#navigation .dropdown-menu").css("background-color","#00C7FC");
+            jQuery("#navigation").css("background-color","#00a79d");
+            jQuery("#navigation .dropdown-menu").css("background-color","#00a79d");
             jQuery("#navigation").addClass("animated-nav");
         } else {
-            jQuery("#navigation").css("background-color","rgba(255, 255, 255, 0.40)");
-            jQuery("#navigation .dropdown-menu").css("background-color","rgba(255, 255, 255, 0.40)");
+            jQuery("#navigation").css("background-color","rgba(255, 255, 255, 0.2)");
+            jQuery("#navigation .dropdown-menu").css("background-color","rgba(255, 255, 255, 0.2)");
             jQuery("#navigation").removeClass("animated-nav");
         }
     });
 
     $('#nav').onePageNav({
+        filter: ':not(.external)',
+        scrollSpeed: 950,
+        scrollThreshold: 1
+    });
+    $('#home').onePageNav({
         filter: ':not(.external)',
         scrollSpeed: 950,
         scrollThreshold: 1
