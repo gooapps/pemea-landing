@@ -1306,6 +1306,10 @@ ul.withCheck {
 #Challenges .modal .modal-body{
     padding: 25px 70px;
 }
+#Challenges  a{
+    color: #292929;
+    cursor: pointer;
+}
 #Challenges .modal h2{
     font-weight: bold;
     margin-bottom: 15px;
