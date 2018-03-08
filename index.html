@@ -196,21 +196,21 @@
             <div class="row">
                 <div class=" col-sm-4 wow fadeInLeft text-center" data-wow-delay="0.2s">
                     <a class="overlayImg" href="http://www.linkedin.com/in/hugo-dominguez-b7782ba" target="_blank">
-                        <span class="roll hidden-xs" ></span>
+                        <span class="roll" ></span>
                         <img src="img/profile/Imagen1.png" class="img-responsive profile"/>
                     </a>
                     <p><br/><b>Hugo Dominguez</b><br/>CEO & Area Director Middle East</p>
                 </div>
                 <div class=" col-sm-4 wow fadeInUp text-center" data-wow-delay="0.3s">
                     <a class="overlayImg" href="http://www.linkedin.com/in/lisbeth-hallas-borum-8469866" target="_blank">
-                        <span class="roll hidden-xs" ></span>
+                        <span class="roll" ></span>
                         <img src="img/profile/Imagen2.png" class="img-responsive profile"/>
                     </a>
                     <p><br/><b>Lisbeth Hallas-Borum</b><br/>Regulatory & Logistic Manager</p>
                 </div>
                 <div class=" col-sm-4 wow fadeInRight text-center" data-wow-delay="0.4s">
                     <a class="overlayImg" href="http://www.linkedin.com/in/borja-nespral" target="_blank">
-                        <span class="roll hidden-xs" ></span>
+                        <span class="roll" ></span>
                         <img src="img/profile/Imagen3.png" class="img-responsive profile"/>
                     </a>
                     <p><br/><b>Borja Nespral</b><br/>Area Director Latin America</p>
@@ -806,57 +806,76 @@ JavaScripts
 <script src="js/datamaps.world.hires.min.js"></script>
 <script>
     $(document).ready(function () {
-        var map = new Datamap({
-            element: document.getElementById('networkMap'),
-            fills: {
-                defaultFill: "#bfbfbf",
-                authorHasTraveledTo: "#004b4b"
-            },
-            geographyConfig: {
-                borderColor: '#8a8989',
-                highlightFillColor: '#1c6e9c',
-                highlightBorderColor: '#124765)',
-                highlightBorderWidth: 1,
-                highlightBorderOpacity: 1
-            },
-            data: {
-                BRA: {fillKey: "authorHasTraveledTo"},
-                BOL: {fillKey: "authorHasTraveledTo"},
-                COL: {fillKey: "authorHasTraveledTo"},
-                VEN: {fillKey: "authorHasTraveledTo"},
-                GUF: {fillKey: "authorHasTraveledTo"},
-                ECU: {fillKey: "authorHasTraveledTo"},
-                PER: {fillKey: "authorHasTraveledTo"},
-                PRY: {fillKey: "authorHasTraveledTo"},
-                ARG: {fillKey: "authorHasTraveledTo"},
-                URY: {fillKey: "authorHasTraveledTo"},
-                PAN: {fillKey: "authorHasTraveledTo"},
-                HND: {fillKey: "authorHasTraveledTo"},
-                GTM: {fillKey: "authorHasTraveledTo"},
-                MEX: {fillKey: "authorHasTraveledTo"},
-                CHL: {fillKey: "authorHasTraveledTo"},
-                NIC: {fillKey: "authorHasTraveledTo"},
-                CUB: {fillKey: "authorHasTraveledTo"},
-                BHS: {fillKey: "authorHasTraveledTo"},
-                DOM: {fillKey: "authorHasTraveledTo"},
-                PRI: {fillKey: "authorHasTraveledTo"},
-                EGY: {fillKey: "authorHasTraveledTo"},
-                TUR: {fillKey: "authorHasTraveledTo"},
-                SAU: {fillKey: "authorHasTraveledTo"},
-                JOR: {fillKey: "authorHasTraveledTo"},
-                SYR: {fillKey: "authorHasTraveledTo"},
-                IRQ: {fillKey: "authorHasTraveledTo"},
-                IRN: {fillKey: "authorHasTraveledTo"},
-                YEM: {fillKey: "authorHasTraveledTo"},
-                OMN: {fillKey: "authorHasTraveledTo"}
-            }
-        });
-        $(window).on('resize', function () {
-            setTimeout(function () {
-                arc1[1].resize();
-            }, 100)
-        });
-    });
+        // OPACITY OF BUTTON SET TO 0%
+        $(".roll").css("opacity", "0");
+
+        // ON MOUSE OVER
+        $(".roll").hover(function () {
+
+            // SET OPACITY TO 70%
+            $(this).stop().animate({
+                opacity: .7
+            }, "fast");
+        },
+                // ON MOUSE OUT
+                        function () {
+
+                            // SET OPACITY BACK TO 50%
+                            $(this).stop().animate({
+                                opacity: 0
+                            }, "slow");
+                        });
+                var map = new Datamap({
+                    element: document.getElementById('networkMap'),
+                    fills: {
+                        defaultFill: "#bfbfbf",
+                        authorHasTraveledTo: "#004b4b"
+                    },
+                    geographyConfig: {
+                        borderColor: '#8a8989',
+                        highlightFillColor: '#1c6e9c',
+                        highlightBorderColor: '#124765)',
+                        highlightBorderWidth: 1,
+                        highlightBorderOpacity: 1
+                    },
+                    data: {
+                        BRA: {fillKey: "authorHasTraveledTo"},
+                        BOL: {fillKey: "authorHasTraveledTo"},
+                        COL: {fillKey: "authorHasTraveledTo"},
+                        VEN: {fillKey: "authorHasTraveledTo"},
+                        GUF: {fillKey: "authorHasTraveledTo"},
+                        ECU: {fillKey: "authorHasTraveledTo"},
+                        PER: {fillKey: "authorHasTraveledTo"},
+                        PRY: {fillKey: "authorHasTraveledTo"},
+                        ARG: {fillKey: "authorHasTraveledTo"},
+                        URY: {fillKey: "authorHasTraveledTo"},
+                        PAN: {fillKey: "authorHasTraveledTo"},
+                        HND: {fillKey: "authorHasTraveledTo"},
+                        GTM: {fillKey: "authorHasTraveledTo"},
+                        MEX: {fillKey: "authorHasTraveledTo"},
+                        CHL: {fillKey: "authorHasTraveledTo"},
+                        NIC: {fillKey: "authorHasTraveledTo"},
+                        CUB: {fillKey: "authorHasTraveledTo"},
+                        BHS: {fillKey: "authorHasTraveledTo"},
+                        DOM: {fillKey: "authorHasTraveledTo"},
+                        PRI: {fillKey: "authorHasTraveledTo"},
+                        EGY: {fillKey: "authorHasTraveledTo"},
+                        TUR: {fillKey: "authorHasTraveledTo"},
+                        SAU: {fillKey: "authorHasTraveledTo"},
+                        JOR: {fillKey: "authorHasTraveledTo"},
+                        SYR: {fillKey: "authorHasTraveledTo"},
+                        IRQ: {fillKey: "authorHasTraveledTo"},
+                        IRN: {fillKey: "authorHasTraveledTo"},
+                        YEM: {fillKey: "authorHasTraveledTo"},
+                        OMN: {fillKey: "authorHasTraveledTo"}
+                    }
+                });
+                $(window).on('resize', function () {
+                    setTimeout(function () {
+                        arc1[1].resize();
+                    }, 100)
+                });
+            });
     $('ul.nav li.dropdown').hover(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(300);
     }, function () {
@@ -941,29 +960,6 @@ JavaScripts
                     }]
             }]
     });
-
-
-    $(function () {
-        // OPACITY OF BUTTON SET TO 0%
-        $(".roll").css("opacity", "0");
-
-        // ON MOUSE OVER
-        $(".roll").hover(function () {
-
-            // SET OPACITY TO 70%
-            $(this).stop().animate({
-                opacity: .7
-            }, "fast");
-        },
-                // ON MOUSE OUT
-                        function () {
-
-                            // SET OPACITY BACK TO 50%
-                            $(this).stop().animate({
-                                opacity: 0
-                            }, "slow");
-                        });
-            });
 </script>
 </body>
 </html>
