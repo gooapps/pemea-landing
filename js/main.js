@@ -13,8 +13,8 @@ $(function(){
 
     jQuery(window).scroll(function () {
         if (jQuery(window).scrollTop() > 400) {
-            jQuery("#navigation").css("background-color","#00a79d");
-            jQuery("#navigation .dropdown-menu").css("background-color","#00a79d");
+            jQuery("#navigation").css("background-color","#97A4AA");
+            jQuery("#navigation .dropdown-menu").css("background-color","rgba(151, 164, 170, 0.75)");
             jQuery("#navigation").addClass("animated-nav");
         } else {
             jQuery("#navigation").css("background-color","rgba(255, 255, 255, 0.2)");
@@ -23,7 +23,7 @@ $(function(){
         }
     });
 
-    $('#nav').onePageNav({
+    $('#navigation').onePageNav({
         filter: ':not(.external)',
         scrollSpeed: 950,
         scrollThreshold: 1
