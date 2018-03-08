@@ -961,7 +961,9 @@ figcaption.mask span {
 /*============================================================
     Contact
 ============================================================*/
-
+#contact{
+    background-color: #DFECF2;
+}
 #contact .address{
     font-weight: bold;
     position: absolute;
@@ -1361,6 +1363,9 @@ ul.withCheck {
 /*============================================================
     benefits
 ============================================================*/
+#benefits{
+    background-color: #DFECF2;
+}
 #benefits .arrow{
     height: 125px;
     width: auto;
@@ -1390,9 +1395,7 @@ ul.withCheck {
 /*============================================================
     OurPartner
 ============================================================*/
-#ourPartner{
-    background-color: #DFECF2;
-}
+
 #ourPartner img{
     margin: 0 auto;
     max-height: 150px;
