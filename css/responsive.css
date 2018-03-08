@@ -184,7 +184,10 @@ px      68    160    252    */
         border-bottom: 1px solid #1f2021;
         color: #1f2021;
     }
-
+    
+    #networkMap{
+        display: none;
+    }
 
     .carousel-caption > div{
         width: auto;
