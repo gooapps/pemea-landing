@@ -262,8 +262,9 @@ body > section {
     background-color: transparent;
 }
 
-#home-carousel .carousel-inner .item {
+#home-carousel .carousel {
     background-size:cover;
+
 }
 
 #home-carousel .slider-content {
@@ -283,7 +284,7 @@ body > section {
 
 .carousel-caption > div {
     background-color: transparent;
-    padding: 100px 50px 0px 50px;
+    padding: 20px 50px 0px 50px;
     position: absolute;
     top: 20%;
     width: 100%;
@@ -322,7 +323,7 @@ body > section {
     color: #fff;
     position: absolute;
     bottom: 0%;
-    left: calc(50% - 60px);
+    left: calc(50% - 50px);
 }
 .bounce {
     -moz-animation: bounce 3s infinite;
