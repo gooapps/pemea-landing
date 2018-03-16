@@ -122,9 +122,14 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div id="home-carousel" class="carousel slide" data-interval="false">
+                    <div id="home-carousel" class="carousel slide" data-interval="3000"data-ride="carousel" style="background-image: url('img/slider/business2.jpg')">
+                      <ol class="carousel-indicators">
+                        <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#home-carousel" data-slide-to="1"></li>
+                        <li data-target="#home-carousel" data-slide-to="2"></li>
+                      </ol>
                         <div class="carousel-inner">
-                            <div class="item active" style="background-image: url('img/slider/business2.jpg')">
+                            <div class="item active">
                                 <div class="carousel-caption">
                                     <div class="animated bounceInRight text-center">
                                         <div class="blur"></div>
@@ -134,18 +139,57 @@
 
                                             <h2>FOR INNOVATIVE MEDICAL COMPANIES</h2>
                                         </div>
+
                                     </div>
                                 </div>
+
                             </div>
-                        </div>
+
+
+                            <div class="item" >
+                                <div class="carousel-caption">
+                                    <div class="animated bounceInRight text-center">
+                                        <div class="blur"></div>
+                                        <div class="content">
+                                            <h1>We develop</h1>
+                                            <h3>In the middle East & Latin America.</h3>
+
+                                            <h3>ONLY BASED ON SUCCESS AND AVOIDING ANY COST FOR THE PRINCIPALS</h3>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                            <div class="item">
+                                <div class="carousel-caption">
+                                    <div class="animated bounceInRight text-center">
+                                        <div class="blur"></div>
+                                        <div class="content">
+                                            <h1>We develop</h1>
+                                            <h3>In the middle East & Latin America.</h3>
+
+                                            <h3>THROUGH OUR RELIABLE DISTRIBUTION NETWORK WE PROVIDE AN EFFICIENT SOLUTION TO GROW INTERNATIONALLY</h3>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            </div>
+
                     </div>
                     <div class="downArrow bounce">
-                        <a href="#WhoWeAre"><img width="60" height="60" alt="" src="img/two-down-chevron.svg" /></a>
+                        <a href="#WhoWeAre"><img width="100" height="60" alt="" src="img/two-down-chevron.svg" /></a>
                     </div>
+
                 </div>
             </div>
         </div>
     </section>
+
     <section style="background-color:#dfedf3">
         <div class="container">
             <div class="row">
@@ -616,7 +660,7 @@ End #OUR SERVICE
         </div>
         <div class="row">
             <div class="col-sm-4 text-center wow fadeInLeft">
-              
+
             </div>
             <div class="col-sm-4 text-center wow fadeInBottom hidden-xs">
                 <img class="arrow" src="img/arrow_green.png"/>
@@ -983,6 +1027,11 @@ JavaScripts
                     }]
             }]
     });
+</script>
+<script>
+	$('.carousel').carousel({
+		interval: 3000
+	})
 </script>
 </body>
 </html>
