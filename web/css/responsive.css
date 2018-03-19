@@ -13,6 +13,13 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 }
 
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .carousel-indicators{
+    bottom: 20px;
+  }
+
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
 
@@ -33,6 +40,10 @@ px      68    160    252    344    436    528    620    712    804    896    */
     }
     .carousel-caption > div {
         top: 27%;
+    }
+
+    .carousel-indicators{
+      bottom: 40px;
     }
 }
 
@@ -126,6 +137,10 @@ px      68    160    252    344    436    528    620    712    */
 
     figure, p{
         padding-top: 30px;
+    }
+
+    .carousel-indicators{
+      bottom: 20px;
     }
 
 
@@ -285,6 +300,14 @@ px      68    160    252    */
         padding-top: 100px;
     }
 
+    .carousel-indicators{
+      bottom: 7px;
+    }
+
+    .content-text-center{
+      text-align: center;
+    }
+
 
 
 
@@ -304,8 +327,12 @@ px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-
+  .carousel-indicators{
+    bottom: 64px;
+  }
 }
+
+
 
 
 /*  Retina media query.
