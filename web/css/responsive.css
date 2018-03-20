@@ -13,9 +13,29 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 }
 
+@media only screen and (max-height: 400px){
+  .carousel-indicators{
+    visibility: hidden;
+
+  }
+  .bounce{
+    visibility: hidden;
+  }
+
+}
+
+@media only screen and (max-height: 500px){
+  .carousel-indicators{
+    visibility: hidden;
+
+  }
+
+
+}
+
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .carousel-indicators{
-    bottom: 20px;
+    bottom: 30px;
   }
 
 }
@@ -23,7 +43,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
 
 
-  
+
 
     .navigation .navbar-nav > li > a{
         padding: 38px 16px;
@@ -45,7 +65,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
     }
 
     .carousel-indicators{
-      bottom: 40px;
+      bottom: 30px;
     }
 }
 
@@ -145,7 +165,7 @@ px      68    160    252    344    436    528    620    712    */
     }
 
     .carousel-indicators{
-      bottom: 20px;
+      bottom: 30px;
     }
 
 
@@ -306,7 +326,7 @@ px      68    160    252    */
     }
 
     .carousel-indicators{
-      bottom: 7px;
+      bottom: 35px;
     }
 
     .content-text-center{
