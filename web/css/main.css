@@ -1332,6 +1332,7 @@ ul.withCheck {
 }
 #Challenges .modal .modal-content{
     border: 4px solid #97A4AA;
+
 }
 #Challenges .modal .modal-body{
     padding: 25px 70px;
@@ -1449,6 +1450,8 @@ custom css */
   margin-top: 40px;
 
 }
+
+
 
 @media only screen and (max-width: 767px) {
 .benefits-box2{
