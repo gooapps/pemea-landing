@@ -44,7 +44,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .carousel-indicators{
-    bottom: 30%;
+    bottom: 15%;
   }
 
 }
