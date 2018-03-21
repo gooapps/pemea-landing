@@ -24,7 +24,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 }
 
-@media only screen and (max-height: 500px){
+@media only screen and (max-height: 600px){
   .carousel-indicators{
     visibility: hidden;
 
@@ -37,14 +37,14 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 
 .carousel-indicators {
-    bottom: 50%;
+    bottom: 100px;
 }
 }
 
 
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .carousel-indicators{
-    bottom: 15%;
+    bottom: 80px;
   }
 
 }
@@ -74,7 +74,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
     }
 
     .carousel-indicators{
-      bottom: 15%;
+      bottom: 90px;
     }
 }
 
@@ -174,7 +174,7 @@ px      68    160    252    344    436    528    620    712    */
     }
 
     .carousel-indicators{
-      bottom: 40%;
+      bottom: 100px;
     }
 
 
@@ -335,7 +335,7 @@ px      68    160    252    */
     }
 
     .carousel-indicators{
-      bottom: 11%;
+      bottom: 140px;
     }
 
     .content-text-center{
@@ -362,7 +362,7 @@ px      68    160    252    344    436    */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
   .carousel-indicators{
-    bottom: 64px;
+    bottom: 150px;
   }
 }
 
