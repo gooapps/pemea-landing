@@ -8,7 +8,7 @@ License     : GPL
 ******************************************************************/
 
 /* =================================== */
-/*	Basic Style 
+/*	Basic Style
 /* =================================== */
 
 body {
@@ -96,7 +96,7 @@ body > section {
 .section-title h2:after {
     left: 5%;
 }
-.section-title h2:before, 
+.section-title h2:before,
 .section-title h2:after {
     border-top: 1px solid #1f2021;
     content: '';
@@ -195,7 +195,7 @@ body > section {
     text-transform: uppercase;
 }
 
-.navigation .navbar-nav > li > a{  
+.navigation .navbar-nav > li > a{
     padding: 38px 25px;
 }
 
@@ -262,8 +262,9 @@ body > section {
     background-color: transparent;
 }
 
-#home-carousel .carousel-inner .item {
+#home-carousel .carousel {
     background-size:cover;
+
 }
 
 #home-carousel .slider-content {
@@ -283,7 +284,7 @@ body > section {
 
 .carousel-caption > div {
     background-color: transparent;
-    padding: 100px 50px 100px 50px;
+    padding: 20px 50px 0px 50px;
     position: absolute;
     top: 20%;
     width: 100%;
@@ -321,8 +322,8 @@ body > section {
 .downArrow{
     color: #fff;
     position: absolute;
-    bottom: 5%;
-    left: calc(50% - 60px);
+    bottom: 0%;
+    left: calc(50% - 50px);
 }
 .bounce {
     -moz-animation: bounce 3s infinite;
@@ -647,7 +648,7 @@ figcaption.mask span {
 
 .fact-icon {
     position: relative;
-    width: 50px; 
+    width: 50px;
     height: 28.87px;
     background-color: #1F2021;
     margin: 14.43px auto;
@@ -969,7 +970,32 @@ figcaption.mask span {
     position: absolute;
     bottom: 10px;
     right: -150px;
+    border: 1px solid #FFF;
 }
+#contact .address2{
+  border: 1px solid #c3dbe4;
+  height: 470px;
+
+
+}
+a:link{
+  color: grey;
+}
+.contactPadding{
+  padding: 0px;
+}
+
+.map-adjustment{
+  height: 470px;
+
+  width: 100%;
+
+}
+
+
+
+
+
 @media (max-width: 767px) {
     #contact .address{
         font-weight: normal;
@@ -980,6 +1006,8 @@ figcaption.mask span {
     #contact p{
         padding-top:0;
     }
+
+
 
 
 }
@@ -1100,9 +1128,9 @@ figcaption.mask span {
     border: 0;
 }
 
-ul.withCheck { 
+ul.withCheck {
     text-align: left;
-    padding-left:20px; 
+    padding-left:20px;
     list-style:none;
 }
 
@@ -1158,11 +1186,11 @@ ul.withCheck {
     text-align: center;
     line-height: 153px;
     width: calc(100% - 30px);
-    z-index: 10;	
+    z-index: 10;
 }
 
 #WhoWeAre .roll:before {
-    content: "\f08c"; 
+    content: "\f08c";
     font-family: FontAwesome;
     font-style: normal;
     font-weight: normal;
@@ -1240,13 +1268,13 @@ ul.withCheck {
     OPPORTUNITIES
 ============================================================*/
 
-#Opportunities ul { 
-    padding-left:20px; 
+#Opportunities ul {
+    padding-left:20px;
     list-style-type: disc;
-    margin-bottom:40px; 
+    margin-bottom:40px;
 }
 
-#Opportunities li { 
+#Opportunities li {
     list-style: none;
     background-color: #dfecf2;
     padding: 20px;
@@ -1283,7 +1311,7 @@ ul.withCheck {
     min-height: 60px;
     text-align:center;
 }
-#Challenges .contentOne, 
+#Challenges .contentOne,
 #Challenges .contentTwo{
     min-height: 180px;
 }
@@ -1304,6 +1332,7 @@ ul.withCheck {
 }
 #Challenges .modal .modal-content{
     border: 4px solid #97A4AA;
+
 }
 #Challenges .modal .modal-body{
     padding: 25px 70px;
@@ -1386,9 +1415,9 @@ ul.withCheck {
 }
 
 .containerMap #networkMap{
-    position: relative; 
+    position: relative;
     width: 725px;
-    height: 390px; 
+    height: 390px;
     margin:0 auto;
 }
 
@@ -1401,5 +1430,42 @@ ul.withCheck {
     max-height: 150px;
 }
 
+/*
+custom css */
+
+.benefits-text-center{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.benefits-box{
+  margin-top: 50px;
+}
+.benefits-box2{
+  margin-top: -50px;
+
+}
+
+.logo-position{
+  margin-top: 40px;
+
+}
 
 
+
+@media only screen and (max-width: 767px) {
+.benefits-box2{
+  margin-top: 0px;
+
+}
+
+.benefits-box{
+  margin-top: 15px;
+}
+
+.finding-position{
+  margin-left: 40px;
+
+}
+
+}

@@ -1,5 +1,5 @@
 
-/*    Default Layout: 992px. 
+/*    Default Layout: 992px.
     Gutters: 24px.
     Outer margins: 48px.
     Leftover space for scrollbars @1024px: 32px.
@@ -13,7 +13,45 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 }
 
+@media only screen and (max-height: 400px){
+  .carousel-indicators{
+    visibility: hidden;
+
+  }
+  .bounce{
+    visibility: hidden;
+  }
+
+}
+
+@media only screen and (max-height: 600px){
+  .carousel-indicators{
+    visibility: hidden;
+
+  }
+
+
+}
+
+@media screen and (min-width: 768px){
+
+
+.carousel-indicators {
+    bottom: 100px;
+}
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .carousel-indicators{
+    bottom: 80px;
+  }
+
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+
 
 
     .navigation .navbar-nav > li > a{
@@ -22,17 +60,21 @@ px      68    160    252    344    436    528    620    712    804    896    */
     .animated-nav .navigation .navbar-nav > li > a {
         padding: 23px 16px;
     }
-    #Challenges .contentOne, 
+    #Challenges .contentOne,
     #Challenges .contentTwo{
         min-height: 225px;
     }
     .carousel-caption {
-        right: 15%;
-        left: 15%;
+        right: 5%;
+        left: 5%;
         padding-bottom: 30px;
     }
     .carousel-caption > div {
-        top: 15%;
+        top: 27%;
+    }
+
+    .carousel-indicators{
+      bottom: 90px;
     }
 }
 
@@ -45,6 +87,9 @@ cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
 
 
     .navigation .navbar-nav > li > a{
@@ -72,13 +117,13 @@ px      68    160    252    344    436    528    620    712    */
     #service .media{
         padding-left: 0;
     }
-    #Opportunities ul { 
-        margin-top:0px; 
+    #Opportunities ul {
+        margin-top:0px;
     }
     #Challenges .subtitle {
         min-height: 107px;
     }
-    #Challenges .contentOne, 
+    #Challenges .contentOne,
     #Challenges .contentTwo{
         min-height: 355px;
     }
@@ -126,6 +171,10 @@ px      68    160    252    344    436    528    620    712    */
 
     figure, p{
         padding-top: 30px;
+    }
+
+    .carousel-indicators{
+      bottom: 100px;
     }
 
 
@@ -184,7 +233,7 @@ px      68    160    252    */
         border-bottom: 1px solid #1f2021;
         color: #1f2021;
     }
-    
+
     #networkMap{
         display: none;
     }
@@ -285,6 +334,14 @@ px      68    160    252    */
         padding-top: 100px;
     }
 
+    .carousel-indicators{
+      bottom: 140px;
+    }
+
+    .content-text-center{
+      text-align: center;
+    }
+
 
 
 
@@ -304,16 +361,20 @@ px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 
-
+  .carousel-indicators{
+    bottom: 150px;
+  }
 }
 
 
+
+
 /*  Retina media query.
-  Overrides styles for devices with a 
+  Overrides styles for devices with a
   device-pixel-ratio of 2+, such as iPhone 4.
 -----------------------------------------------    */
 
-@media 
+@media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 

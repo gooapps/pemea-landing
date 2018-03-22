@@ -1,0 +1,4 @@
+#AuthType Basic
+#AuthName "My Protected Area"
+#AuthUserFile /var/www/pemea-landing/.htpasswd
+#Require valid-user
