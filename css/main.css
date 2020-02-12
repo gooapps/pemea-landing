@@ -1285,6 +1285,13 @@ ul.withCheck {
 #container{
     padding-top: 40px;
 }
+/* Added by Obelisk Services */
+#Opportunities img{
+	min-width: 310px;
+	min-height: 212px;
+	max-height: 400px;
+	margin: 5px auto 10px auto;
+}
 
 /*============================================================
     CHALLENGES
