@@ -974,7 +974,7 @@ figcaption.mask span {
 }
 #contact .address2{
   border: 1px solid #c3dbe4;
-  height: 470px;
+  /*height: 470px;*/ /* Modified by Obelisk Services */
 
 
 }
