@@ -2,8 +2,8 @@
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 999; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  z-index: 1031; /* Sit on top */
+  padding-top: 20px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -15,21 +15,20 @@
 
 /* Modal Content */
 .modal-content {
-  background-image: url("../img/covid.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
   background-color: #fefefe;
   margin: auto;
-  padding: 20px;
   border: 1px solid #888;
-  width: 90%;
+  width: 60%;
 }
 
 /* The Close Button */
 .close {
+  position: absolute;
   color: #0061ac;
-  float: right;
+  right: 5px;
   font-size: 28px;
   font-weight: bold;
   opacity: 1;
@@ -40,4 +39,9 @@
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+@media screen and (max-width: 900px) {
+	.modal-content {
+		width: 100%;
+	}
 }
